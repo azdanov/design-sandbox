@@ -22,64 +22,30 @@
               />
             </div>
             <div class="flex">
-              <input
-                id="plan-basic"
-                class="radio__input"
-                type="radio"
-                name="plan"
-                value="basic"
-              />
-              <label for="plan-basic" class="radio__label">
-                <div class="relative">
-                  <span class="block uppercase font-bold font-bold">Basic</span>
-                  <span class="highlight font-bold text-3xl">1&nbsp;</span
-                  ><span class="highlight font-bold text-xl">GB</span>&nbsp;<span
-                    class="hidden lg:inline"
-                    >uploads</span
-                  >
-                  $<span class="highlight font-bold">5</span>/mo
-                  <span class="checkmark"></span>
-                </div>
-              </label>
-              <input
-                id="plan-essential"
-                class="radio__input"
-                type="radio"
-                name="plan"
-                value="essential"
-                checked
-              />
-              <label for="plan-essential" class="radio__label mx-4">
-                <div class="relative">
-                  <span class="block uppercase font-bold">Essential</span>
-                  <span class="highlight font-bold text-3xl">5&nbsp;</span
-                  ><span class="highlight font-bold text-xl">GB</span>&nbsp;<span
-                    class="hidden lg:inline"
-                    >uploads</span
-                  >
-                  $<span class="highlight font-bold">10</span>/mo
-                  <span class="checkmark"></span>
-                </div>
-              </label>
-              <input
-                id="plan-pro"
-                class="radio__input"
-                type="radio"
-                name="plan"
-                value="pro"
-              />
-              <label for="plan-pro" class="radio__label">
-                <div class="relative">
-                  <span class="block uppercase font-bold">Pro</span>
-                  <span class="highlight font-bold text-3xl">15&nbsp;</span
-                  ><span class="highlight font-bold text-xl">GB</span>&nbsp;<span
-                    class="hidden lg:inline"
-                    >uploads</span
-                  >
-                  $<span class="highlight font-bold">20</span>/mo
-                  <span class="checkmark"></span>
-                </div>
-              </label>
+              <Radio
+                @selected="updateSelected"
+                :selected="selected"
+                class="w-1/3"
+                tier="Basic"
+                quantity="1"
+                price="5"
+              ></Radio>
+              <Radio
+                @selected="updateSelected"
+                :selected="selected"
+                class="w-1/3 mx-3"
+                tier="Essential"
+                quantity="5"
+                price="10"
+              ></Radio>
+              <Radio
+                @selected="updateSelected"
+                :selected="selected"
+                class="w-1/3"
+                tier="Pro"
+                quantity="15"
+                price="20"
+              ></Radio>
             </div>
           </fieldset>
         </fieldset>
@@ -109,58 +75,18 @@
 </template>
 
 <script>
-export default {}
+import Radio from './components/Radio'
+export default {
+  components: { Radio },
+  data: function() {
+    return { selected: 'essential' }
+  },
+  methods: {
+    updateSelected(selection) {
+      this.selected = selection
+    },
+  },
+}
 </script>
 
-<style lang="postcss">
-.radio__label {
-  @apply py-3 px-4 bg-white border-2 border-grey-100 rounded cursor-pointer mb-2 flex items-baseline w-1/3 text-grey-600;
-}
-
-.radio__input {
-  @apply hidden;
-}
-
-.radio__input:checked + .radio__label {
-  @apply bg-teal-050 border-2 border-teal-400 text-teal-700;
-}
-
-.radio__input:checked + .radio__label .highlight {
-  @apply text-teal-800;
-}
-
-.radio__input + .radio__label .checkmark {
-  @apply hidden;
-}
-
-.radio__input:checked + .radio__label .checkmark {
-  @apply bg-teal-400 absolute inline-block bottom-0 right-0 rounded-full -mr-2 -mb-1;
-  width: 22px;
-  height: 22px;
-  transform: rotate(45deg);
-}
-
-@screen md {
-  .radio__input:checked + .radio__label .checkmark {
-    @apply bottom-auto top-0;
-  }
-}
-
-.radio__input:checked + .radio__label .checkmark:before {
-  @apply absolute bg-white;
-  content: '';
-  width: 2px;
-  height: 10px;
-  left: 11px;
-  top: 5px;
-}
-
-.radio__input:checked + .radio__label .checkmark:after {
-  @apply absolute bg-white;
-  content: '';
-  width: 5px;
-  height: 2px;
-  left: 7px;
-  top: 13px;
-}
-</style>
+<style lang="postcss"></style>

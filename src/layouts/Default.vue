@@ -11,7 +11,7 @@
           }}</span>
         </g-link>
         <ul class="text-xl list-reset flex ml-auto -mb-2">
-          <li>
+          <!-- <li>
             <g-link
               to="/"
               class="text-grey-800 hover:underline mr-4"
@@ -26,7 +26,7 @@
               exact-active-class="underline"
               >Dashboard</g-link
             >
-          </li>
+          </li> -->
           <li>
             <g-link
               to="/settings"
