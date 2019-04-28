@@ -1,6 +1,6 @@
 # Design Sandbox
 
-Playing around with Gridsome and Tailwind CSS.
+Playing around with Gridsome and Tailwind CSS. Think of this project as a giant sandbox of design. The goal is to try out different ideas, and realize them in a real project.
 
 ## Complex Form
 
