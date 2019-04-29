@@ -22,30 +22,30 @@
               />
             </div>
             <div class="flex">
-              <Radio
+              <d-radio
                 @selected="updateSelected"
                 :selected="selected"
                 class="w-1/3"
                 tier="Basic"
                 quantity="1"
                 price="5"
-              ></Radio>
-              <Radio
+              ></d-radio>
+              <d-radio
                 @selected="updateSelected"
                 :selected="selected"
                 class="w-1/3 mx-3"
                 tier="Essential"
                 quantity="5"
                 price="10"
-              ></Radio>
-              <Radio
+              ></d-radio>
+              <d-radio
                 @selected="updateSelected"
                 :selected="selected"
                 class="w-1/3"
                 tier="Pro"
                 quantity="15"
                 price="20"
-              ></Radio>
+              ></d-radio>
             </div>
           </fieldset>
         </fieldset>
@@ -76,8 +76,9 @@
 
 <script>
 import Radio from './components/Radio'
+
 export default {
-  components: { Radio },
+  components: { 'd-radio': Radio },
   data: function() {
     return { selected: 'essential' }
   },

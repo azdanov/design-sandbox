@@ -9,28 +9,28 @@
         >
       </div>
       <div class="w-full md:w-7/12">
-        <Checkbox
+        <d-checkbox
           title="Account Activity"
           description="Get important notifications about you or activity you've missed"
           checked
-        ></Checkbox>
-        <Checkbox
+        ></d-checkbox>
+        <d-checkbox
           title="New For You"
           description="A weekly email featuring activity from people you follow"
-        ></Checkbox>
-        <Checkbox
+        ></d-checkbox>
+        <d-checkbox
           title="Meetups Near You"
           description="Get a new email when a Meetup is posted close to your location"
-        ></Checkbox>
-        <Checkbox
+        ></d-checkbox>
+        <d-checkbox
           title="Company News"
           description="Get news, announcements, and product updates"
           checked
-        ></Checkbox>
-        <Checkbox
+        ></d-checkbox>
+        <d-checkbox
           title="Weekly Jobs"
           description="Weekly digest of design jobs"
-        ></Checkbox>
+        ></d-checkbox>
       </div>
     </div>
   </fieldset>
@@ -38,9 +38,10 @@
 
 <script>
 import Checkbox from './components/Checkbox'
+
 export default {
   components: {
-    Checkbox,
+    'd-checkbox': Checkbox,
   },
 }
 </script>

@@ -9,28 +9,21 @@
         >
       </div>
       <div class="w-full md:w-7/12">
-        <div class="flex">
-          <fieldset class="mb-4 w-full mr-4">
-            <label class="block mb-2 text-lg" for="first_name">First Name</label>
-            <input
-              id="first_name"
-              placeholder="First Name"
-              class="block appearance-none w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-500"
-              type="text"
-              value="John"
-            />
-          </fieldset>
-
-          <fieldset class="mb-4 w-full">
-            <label class="block mb-2 text-lg" for="last_name">Last Name</label>
-            <input
-              id="last_name"
-              class="block appearance-none w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-500"
-              type="text"
-              placeholder="Last Name"
-              value="Smith"
-            />
-          </fieldset>
+        <div class="flex -mx-3">
+          <d-input
+            v-model="first_name"
+            class="mb-4 w-full px-3"
+            label="First Name"
+            type="text"
+            placeholder="First Name"
+          ></d-input>
+          <d-input
+            v-model="last_name"
+            class="mb-4 w-full px-3"
+            label="Last Name"
+            type="text"
+            placeholder="Last Name"
+          ></d-input>
         </div>
 
         <fieldset class="mb-4">
@@ -43,16 +36,12 @@
           />
         </fieldset>
 
-        <fieldset class="mb-4">
-          <label class="block mb-2 text-lg" for="username">Username</label>
-          <input
-            id="username"
-            class="block appearance-none w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-500"
-            type="text"
-            placeholder="Username"
-            value="JSmith"
-          />
-        </fieldset>
+        <d-input
+          v-model="username"
+          label="Username"
+          type="text"
+          placeholder="Username"
+        ></d-input>
 
         <fieldset class="mb-4">
           <label class="block mb-2 text-lg" for="about_you">About You</label>
@@ -71,7 +60,20 @@ One mission age see firm language resource trouble. School state TV argue go. Su
 </template>
 
 <script>
-export default {}
+import Input from './components/Input'
+
+export default {
+  components: {
+    'd-input': Input,
+  },
+  data: function() {
+    return {
+      first_name: 'John',
+      last_name: 'Smith',
+      username: 'JSmith',
+    }
+  },
+}
 </script>
 
 <style></style>

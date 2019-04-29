@@ -9,16 +9,12 @@
         >
       </div>
       <div class="w-full md:w-7/12">
-        <fieldset class="mb-4">
-          <label for="email" class="block mb-2 text-lg">Email Address</label>
-          <input
-            id="email"
-            type="email"
-            placeholder="Email"
-            value="jsmith@example.com"
-            class="block appearance-none w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-500"
-          />
-        </fieldset>
+        <d-input
+          v-model="email"
+          label="Email Address"
+          type="email"
+          placeholder="Email"
+        ></d-input>
 
         <fieldset class="mb-4">
           <label class="block mb-2 text-lg" for="password">Password</label>
@@ -90,7 +86,18 @@
 </template>
 
 <script>
-export default {}
+import Input from './components/Input'
+
+export default {
+  components: {
+    'd-input': Input,
+  },
+  data: function() {
+    return {
+      email: 'jsmith@example.com',
+    }
+  },
+}
 </script>
 
 <style></style>
