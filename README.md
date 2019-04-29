@@ -4,7 +4,7 @@ Playing around with Gridsome and Tailwind CSS. Think of this project as a giant 
 
 ## Complex Form
 
-A form that can be seen in almost every cornet of the web. [Live version](https://unruffled-tereshkova-e5b6eb.netlify.com/settings).
+A form that can be seen in almost every cornet of the web. [View Settings Demo](https://design-sandbox.netlify.com/settings).
 
 | Desktop                                                                                                                         | Mobile                                                                                                                              |
 | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
