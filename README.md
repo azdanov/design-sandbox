@@ -2,6 +2,8 @@
 
 Playing around with Gridsome and Tailwind CSS. Think of this project as a giant sandbox of design. The goal is to try out different ideas, and realize them in a real project.
 
+Examples are adapted from the wonderful book [Refactoring UI](https://refactoringui.com/book/).
+
 ## Complex Form
 
 A form that can be seen in almost every cornet of the web. [View Settings Demo](https://design-sandbox.netlify.com/settings).
