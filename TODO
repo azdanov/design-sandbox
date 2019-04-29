@@ -1,6 +1,6 @@
 Settings:
 ☐ Add modal for change email and password
-☐ Refactor text and email inputs
+✔ Refactor text and email inputs @done(19-04-29 11:17)
 ☐ Make responsive design better
 ☐ Add error messages
 ☐ Add validation?
