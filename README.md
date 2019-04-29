@@ -4,9 +4,9 @@ Playing around with Gridsome and Tailwind CSS. Think of this project as a giant 
 
 Examples are adapted from the wonderful book [Refactoring UI](https://refactoringui.com/book/).
 
-## Complex Form
+## Settings
 
-A form that can be seen in almost every cornet of the web. [View Settings Demo](https://design-sandbox.netlify.com/settings).
+A complex form that can be seen in almost every cornet of the web. [View Settings Demo](https://design-sandbox.netlify.com/settings).
 
 | Desktop                                                                                                                         | Mobile                                                                                                                              |
 | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
