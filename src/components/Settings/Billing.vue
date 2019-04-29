@@ -1,9 +1,9 @@
 <template>
-  <fieldset class="pb-6 mb-6 border-b border-grey-100">
+  <fieldset class="pb-6 mb-6 border-b border-gray-100">
     <div class="flex justify-between flex-wrap md:flex-no-wrap">
       <div class="w-full md:w-4/12 mb-3 md:mb-0">
         <legend class="text-lg">Billing</legend>
-        <small class="text-grey-600 block pt-1 pb-2"
+        <small class="text-gray-600 block pt-1 pb-2"
           >Make sure to keep your payment method up-to-date for an effortless and
           care-free experience.</small
         >
@@ -16,7 +16,7 @@
 
               <input
                 id="subscription"
-                class="text-light-blue-vivid-700 cursor-pointer bg-grey-050 hover:underline"
+                class="text-light-blue-vivid-700 cursor-pointer bg-gray-050 hover:underline"
                 type="button"
                 value="Cancel subscription"
               />
@@ -53,17 +53,17 @@
         <fieldset class="mt-8 mb-4">
           <legend class="mb-3 block text-lg">Payment method</legend>
           <div
-            class="flex justify-between p-3 border bg-grey-075 border-grey-200 rounded"
+            class="flex justify-between p-3 border bg-gray-075 border-gray-200 rounded"
           >
             <p>
               Visa ending in 5555
-              <span class="block text-grey-500">
+              <span class="block text-gray-500">
                 expires 1/2019
               </span>
             </p>
             <input
               id="payment_method"
-              class="bg-grey-050 hover:bg-white border text-grey-700 hover:text-grey-600 border-grey-200 hover:border-grey-100 focus:shadow-outline focus:outline-none text-white font-bold py-3 px-4 rounded cursor-pointer"
+              class="bg-gray-050 hover:bg-white border text-gray-700 hover:text-gray-600 border-gray-200 hover:border-gray-100 focus:shadow-outline focus:outline-none text-white font-bold py-3 px-4 rounded cursor-pointer"
               type="button"
               value="Update"
             />

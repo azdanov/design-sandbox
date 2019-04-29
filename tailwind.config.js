@@ -29,17 +29,17 @@ module.exports = {
         'light-blue-vivid-900': '#035388',
 
         // Neutrals
-        'grey-050': '#F7F7F7',
-        'grey-075': '#F2F2F2',
-        'grey-100': '#E1E1E1',
-        'grey-200': '#CFCFCF',
-        'grey-300': '#B1B1B1',
-        'grey-400': '#9E9E9E',
-        'grey-500': '#7E7E7E',
-        'grey-600': '#626262',
-        'grey-700': '#515151',
-        'grey-800': '#3B3B3B',
-        'grey-900': '#222222',
+        'gray-050': '#F7F7F7',
+        'gray-075': '#F2F2F2',
+        'gray-100': '#E1E1E1',
+        'gray-200': '#CFCFCF',
+        'gray-300': '#B1B1B1',
+        'gray-400': '#9E9E9E',
+        'gray-500': '#7E7E7E',
+        'gray-600': '#626262',
+        'gray-700': '#515151',
+        'gray-800': '#3B3B3B',
+        'gray-900': '#222222',
 
         // Supporting
         'red-vivid-050': '#FFE3E3',

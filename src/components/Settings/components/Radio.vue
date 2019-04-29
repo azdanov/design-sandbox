@@ -60,7 +60,7 @@ export default {
 
 <style lang="postcss">
 .radio__label {
-  @apply py-3 px-4 bg-white border-2 border-grey-100 rounded cursor-pointer mb-2 flex items-baseline text-grey-600;
+  @apply py-3 px-4 bg-white border-2 border-gray-100 rounded cursor-pointer mb-2 flex items-baseline text-gray-600;
 }
 
 .radio__input {

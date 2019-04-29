@@ -5,7 +5,7 @@
       <div class="div w-7/12 flex justify-end">
         <input
           type="button"
-          class="bg-grey-050 hover:bg-white border text-grey-700 hover:text-grey-600 border-grey-200 hover:border-grey-100 focus:shadow-outline focus:outline-none text-white font-bold py-3 px-4 rounded cursor-pointer mr-4"
+          class="bg-gray-050 hover:bg-white border text-gray-700 hover:text-gray-600 border-gray-200 hover:border-gray-100 focus:shadow-outline focus:outline-none text-white font-bold py-3 px-4 rounded cursor-pointer mr-4"
           value="Cancel"
         />
         <input

@@ -9,7 +9,7 @@
     />
     <label for="notifications_activity" class="checkbox__label">
       {{ title }}
-      <small class="w-full text-grey-600">{{ description }}</small
+      <small class="w-full text-gray-600">{{ description }}</small
       ><span class="checkmark"></span>
     </label>
   </div>

@@ -1,10 +1,10 @@
 <template>
   <div
-    class="bg-grey-050 text-grey-800 shadow-lg flex flex-col min-h-screen subpixel-antialiased"
+    class="bg-gray-050 text-gray-800 shadow-lg flex flex-col min-h-screen subpixel-antialiased"
   >
     <header class="bg-yellow-vivid-300 gradient border-b-2 border-gray-800 px-8">
       <nav class="flex items-center justify-between flex-wrap py-3">
-        <g-link to="/" class="flex items-center text-grey-800">
+        <g-link to="/" class="flex items-center text-gray-800">
           <Logo class="w-16 h-16 mb-3 mr-3" />
           <span class="font-semibold text-4xl tracking-tight">{{
             $static.metaData.siteName
@@ -14,7 +14,7 @@
           <!-- <li>
             <g-link
               to="/"
-              class="text-grey-800 hover:underline mr-4"
+              class="text-gray-800 hover:underline mr-4"
               exact-active-class="underline"
               >Home</g-link
             >
@@ -22,7 +22,7 @@
           <li>
             <g-link
               to="/dashboard"
-              class="text-grey-800 hover:underline mr-4"
+              class="text-gray-800 hover:underline mr-4"
               exact-active-class="underline"
               >Dashboard</g-link
             >
@@ -30,7 +30,7 @@
           <li>
             <g-link
               to="/settings"
-              class="text-grey-800 hover:underline"
+              class="text-gray-800 hover:underline"
               exact-active-class="underline"
               >Settings</g-link
             >
@@ -41,8 +41,8 @@
     <main class="flex-1 bg-transparent">
       <slot />
     </main>
-    <footer class="mono py-6 border-t border-grey-100">
-      <p class="text-center text-grey-600">Design Sandbox © {{ getYear() }}</p>
+    <footer class="mono py-6 border-t border-gray-100">
+      <p class="text-center text-gray-600">Design Sandbox © {{ getYear() }}</p>
     </footer>
   </div>
 </template>

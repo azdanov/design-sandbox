@@ -1,9 +1,9 @@
 <template>
-  <fieldset class="pb-6 mb-6 border-b border-grey-100">
+  <fieldset class="pb-6 mb-6 border-b border-gray-100">
     <div class="flex justify-between flex-wrap md:flex-no-wrap">
       <div class="w-full md:w-4/12 mb-3 md:mb-0">
         <legend class="text-lg">Basics</legend>
-        <small class="text-grey-600 block pt-1 pb-2"
+        <small class="text-gray-600 block pt-1 pb-2"
           >Having an up-to-date email address attached to your account is a great step
           towar improved account security</small
         >
@@ -16,7 +16,7 @@
             type="email"
             placeholder="Email"
             value="jsmith@example.com"
-            class="block appearance-none w-full border border-grey-200 text-grey-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-grey-500"
+            class="block appearance-none w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-500"
           />
         </fieldset>
 
@@ -24,7 +24,7 @@
           <label class="block mb-2 text-lg" for="password">Password</label>
           <input
             id="password"
-            class="bg-grey-050 hover:bg-white border text-grey-700 hover:text-grey-600 border-grey-200 hover:border-grey-100 focus:shadow-outline focus:outline-none text-white font-bold py-3 px-4 rounded cursor-pointer"
+            class="bg-gray-050 hover:bg-white border text-gray-700 hover:text-gray-600 border-gray-200 hover:border-gray-100 focus:shadow-outline focus:outline-none text-white font-bold py-3 px-4 rounded cursor-pointer"
             type="button"
             value="Change password"
           />
@@ -36,7 +36,7 @@
             <select
               id="language"
               name="language"
-              class="block appearance-none bg-white w-full border border-grey-200 text-grey-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-grey-500"
+              class="block appearance-none bg-white w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-500"
             >
               <option value="en">English</option>
               <option value="et">Estonian</option>
@@ -64,7 +64,7 @@
             <select
               id="country"
               name="country"
-              class="block appearance-none bg-white w-full border border-grey-200 text-grey-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-grey-500"
+              class="block appearance-none bg-white w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-500"
             >
               <option value="est">Estonia</option>
               <option value="rus">Russia</option>

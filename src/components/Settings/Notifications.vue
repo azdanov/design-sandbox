@@ -1,9 +1,9 @@
 <template>
-  <fieldset class="pb-6 mb-6 border-b border-grey-100">
+  <fieldset class="pb-6 mb-6 border-b border-gray-100">
     <div class="flex justify-between flex-wrap md:flex-no-wrap">
       <div class="w-full md:w-4/12 mb-3 md:mb-0">
         <legend class="text-lg">Notifications</legend>
-        <small class="text-grey-600 block pt-1 pb-2"
+        <small class="text-gray-600 block pt-1 pb-2"
           >Get notified of activity going on with your account. Notifications will be
           sent to the email that you have provided.</small
         >
