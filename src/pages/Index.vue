@@ -3,8 +3,16 @@
     <main class="container my-4">
       <div class="w-full sm:w-5/6 mx-auto">
         <h1 class="text-4xl text-center">Gallery</h1>
+        <p class="text-center">
+          Examples are adapted from the wonderful book
+          <a
+            class="text-light-blue-vivid-700 hover:underline"
+            href="https://refactoringui.com/book/"
+            >Refactoring UI</a
+          >.
+        </p>
 
-        <div class="mt-6 flex flex-wrap justify-between -mx-4">
+        <div class="mt-8 flex flex-wrap justify-between -mx-4">
           <div class="w-1/2 px-3">
             <g-link
               to="/settings"
