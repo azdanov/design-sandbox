@@ -2876,12 +2876,13 @@ eslint-config-prettier@^4.2.0:
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-plugin-gridsome@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-gridsome/-/eslint-plugin-gridsome-1.1.1.tgz#c5119e9e64f79695d08b20b8301f364c647bf1f9"
-  integrity sha512-JhAc34JmCpmrilKhYmmtXvE+gT4eyLlIzwIJ6TTKIvtjgDuZ5rvc+eF32w2cqvIYY5lhwLDvJMyZivDWw4tAeA==
+eslint-plugin-gridsome@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-gridsome/-/eslint-plugin-gridsome-1.2.3.tgz#19f35cc18b7351102478da93669a0c4741217d24"
+  integrity sha512-h8nnvOfo1pGSc6rrfpkO1b1g/HoQgRZXOxApJDjEvQrlgS34OH6nzlXsU+qSLGkOAAxbyTeGteQhNjcGka9/lg==
   dependencies:
-    prettier "^1.15.3"
+    prettier "^1.17.0"
+    vue-eslint-parser "^6.0.4"
 
 eslint-plugin-prettier@^3.0.1:
   version "3.0.1"
@@ -3217,6 +3218,11 @@ extsprintf@^1.2.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
+
+faker@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/faker/-/faker-4.1.0.tgz#1e45bbbecc6774b3c195fad2835109c6d748cc3f"
+  integrity sha1-HkW7vsxndLPBlfrSg1EJxtdIzD8=
 
 fast-deep-equal@^2.0.1:
   version "2.0.1"
@@ -6496,7 +6502,7 @@ prettier@1.16.3:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.16.3.tgz#8c62168453badef702f34b45b6ee899574a6a65d"
   integrity sha512-kn/GU6SMRYPxUakNXhpP0EedT/KmaPzr0H5lIsDogrykbaxOpOfAFfk5XA7DZrJyMAv1wlMV3CPcZruGXVVUZw==
 
-prettier@^1.15.3, prettier@^1.17.0:
+prettier@^1.17.0:
   version "1.17.0"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.17.0.tgz#53b303676eed22cc14a9f0cec09b477b3026c008"
   integrity sha512-sXe5lSt2WQlCbydGETgfm1YBShgOX4HxQkFPvbxkcwgDvGDeqVau8h+12+lmSVlP3rHPz0oavfddSZg/q+Szjw==
@@ -7697,10 +7703,10 @@ table@^5.2.3:
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
 
-tailwindcss@^1.0.0-beta.7:
-  version "1.0.0-beta.7"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.0.0-beta.7.tgz#d4fd5ee6ccf516d16b26216525a25723a305d94e"
-  integrity sha512-wJCniKarsvu1Q/TfSdQlNqoKFAG2xMoFJa64s/165WXIS/4QqqWzQkk9to9GMMEoCTr6eZPVHmTFw4w+omuJIQ==
+tailwindcss@^1.0.0-beta.8:
+  version "1.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.0.0-beta.8.tgz#62c04d4bb342933b45164735b0334119651cd733"
+  integrity sha512-rHS9yx2KzQPnfE++in2FcZ9yPt1KwdqENvMbmJzgWwidD4riNdTtGDKSk/3g7A8I2D7hMFvk6l6H3B52vOpqwQ==
   dependencies:
     autoprefixer "^9.4.5"
     bytes "^3.0.0"

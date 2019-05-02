@@ -1,18 +1,730 @@
 <template>
-  <Layout>
-    <h1>Dashboard</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis
-      animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit
-      assumenda rem dolores inventore iste reprehenderit maxime! Iusto.
-    </p>
+  <Layout bland="true">
+    <section class="gradient-blue py-2">
+      <div class="flex justify-between w-full lg:w-10/12 mx-auto">
+        <div class="flex-1 pr-6">
+          <div class="py-3 flex flex-col items-center">
+            <h3 class="font-bold uppercase text-light-blue-vivid-100">
+              Overdue
+            </h3>
+            <p class="text-white text-4xl font-light">€500</p>
+            <button
+              class="bg-light-blue-vivid-800 border-light-blue-vivid-800 hover:border-light-blue-vivid-900 hover:bg-light-blue-vivid-900 focus:shadow-outline focus:outline-none text-white font-bold py-1 px-3 mt-2 rounded-full cursor-pointer flex items-center"
+            >
+              View all
+              <span class="ml-2">
+                <svg
+                  class="fill-current h-3 w-3"
+                  viewBox="0 0 8 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m5.293 6.95.707.707 5.657-5.657-1.414-1.414-4.243 4.242-4.243-4.242-1.414 1.414z"
+                    transform="matrix(0 -1 1 0 0 12)"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="flex-1 px-3">
+          <div class="py-3 flex flex-col items-center">
+            <h3 class="font-bold uppercase text-light-blue-vivid-100">
+              Total&nbsp;Outstanding
+            </h3>
+            <p class="text-white text-4xl font-light">€3,900</p>
+            <button
+              class="bg-light-blue-vivid-800 border-light-blue-vivid-800 hover:border-light-blue-vivid-900 hover:bg-light-blue-vivid-900  hover:bg-light-blue-vivid-500 focus:shadow-outline focus:outline-none text-white font-bold py-1 px-3 mt-2 rounded-full cursor-pointer flex items-center"
+            >
+              View all
+              <span class="ml-2">
+                <svg
+                  class="fill-current h-3 w-3"
+                  viewBox="0 0 8 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m5.293 6.95.707.707 5.657-5.657-1.414-1.414-4.243 4.242-4.243-4.242-1.414 1.414z"
+                    transform="matrix(0 -1 1 0 0 12)"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="flex-1 px-3">
+          <div class="py-3 flex flex-col items-center">
+            <h3 class="font-bold uppercase text-light-blue-vivid-100">
+              In Draft
+            </h3>
+            <p class="text-white text-4xl font-light">€3,400</p>
+            <button
+              class="bg-light-blue-vivid-800 border-light-blue-vivid-800 hover:border-light-blue-vivid-900 hover:bg-light-blue-vivid-900  hover:bg-light-blue-vivid-500 focus:shadow-outline focus:outline-none text-white font-bold py-1 px-3 mt-2 rounded-full cursor-pointer flex items-center"
+            >
+              View all
+              <span class="ml-2">
+                <svg
+                  class="fill-current h-3 w-3"
+                  viewBox="0 0 8 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m5.293 6.95.707.707 5.657-5.657-1.414-1.414-4.243 4.242-4.243-4.242-1.414 1.414z"
+                    transform="matrix(0 -1 1 0 0 12)"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="px-3 mx-auto w-full lg:w-10/12">
+      <div class="mt-8 my-10">
+        <h2 class="text-xl mb-3 text-light-blue-vivid-900">Recent Invoices</h2>
+        <section class="flex flex-wrap justify-between -mx-3">
+          <div
+            class="w-full md:flex-1 flex flex-col my-3 mx-3 shadow-md bg-white rounded-lg"
+          >
+            <div class="flex-1 px-5 py-4">
+              <div class="flex flex-wrap justify-between">
+                <p class="font-bold text-light-blue-vivid-900">
+                  {{ faker.name.findName() }}
+                </p>
+                <span
+                  class="inline-block bg-yellow-vivid-100 rounded-full px-3 text-yellow-vivid-800"
+                >
+                  Pending
+                </span>
+              </div>
+              <p class="text-2xl text-light-blue-vivid-800">
+                €3,400
+              </p>
+              <p class="text-gray-500">
+                Due in 2 days
+              </p>
+            </div>
+            <button
+              class="py-2 bg-gray-075 hover:bg-gray-100 text-gray-700 w-full justify-center flex items-center focus:outline-none focus:shadow-outline"
+            >
+              View Invoice
+              <span class="ml-2 text-gray-500">
+                <svg
+                  class="fill-current h-3 w-3"
+                  viewBox="0 0 8 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m5.293 6.95.707.707 5.657-5.657-1.414-1.414-4.243 4.242-4.243-4.242-1.414 1.414z"
+                    transform="matrix(0 -1 1 0 0 12)"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div
+            class="w-full md:flex-1 flex flex-col my-3 mx-3 shadow-md bg-white rounded-lg"
+          >
+            <div class="flex-1 px-5 py-4">
+              <div class="flex flex-wrap justify-between">
+                <p class="font-bold text-light-blue-vivid-900">
+                  {{ faker.name.findName() }}
+                </p>
+                <span
+                  class="inline-block bg-red-vivid-100 rounded-full px-3 text-red-vivid-800"
+                >
+                  Overdue
+                </span>
+              </div>
+              <p class="text-2xl text-light-blue-vivid-800">
+                €500
+              </p>
+              <p class="text-gray-500">
+                Due Yesterday
+              </p>
+            </div>
+            <button
+              class="py-2 bg-gray-075 hover:bg-gray-100 text-gray-700 w-full justify-center flex items-center focus:outline-none focus:shadow-outline"
+            >
+              View Invoice
+              <span class="ml-2 text-gray-500">
+                <svg
+                  class="fill-current h-3 w-3"
+                  viewBox="0 0 8 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m5.293 6.95.707.707 5.657-5.657-1.414-1.414-4.243 4.242-4.243-4.242-1.414 1.414z"
+                    transform="matrix(0 -1 1 0 0 12)"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div
+            class="w-full md:flex-1 flex flex-col my-3 mx-3 shadow-md bg-white rounded-lg"
+          >
+            <div class="flex-1 px-5 py-4">
+              <div class="flex flex-wrap justify-between">
+                <p class="font-bold text-light-blue-vivid-900">
+                  {{ faker.name.findName() }}
+                </p>
+                <span class="inline-block bg-teal-200 rounded-full px-3 text-teal-800">
+                  Paid
+                </span>
+              </div>
+              <p class="text-2xl text-light-blue-vivid-800">
+                €5,200
+              </p>
+              <p class="text-gray-500">
+                Due 16 days ago
+              </p>
+            </div>
+            <button
+              class="py-2 bg-gray-075 hover:bg-gray-100 text-gray-700 w-full justify-center flex items-center focus:outline-none focus:shadow-outline"
+            >
+              View Invoice
+              <span class="ml-2 text-gray-500">
+                <svg
+                  class="fill-current h-3 w-3"
+                  viewBox="0 0 8 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m5.293 6.95.707.707 5.657-5.657-1.414-1.414-4.243 4.242-4.243-4.242-1.414 1.414z"
+                    transform="matrix(0 -1 1 0 0 12)"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <div class="mt-8 mb-12">
+        <h2 class="text-xl mb-3 text-light-blue-vivid-900">All Invoices</h2>
+
+        <table
+          class="table hidden sm:table table-auto w-full text-left bg-white shadow-lg rounded-lg"
+        >
+          <tr class="text-light-blue-vivid-900">
+            <th class="hidden md:table-cell"></th>
+            <th class="pl-2 md:pl-0">Client</th>
+            <th>Issued Date</th>
+            <th>Due Date</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td class="hidden md:table-cell">
+              <img
+                :src="faker.internet.avatar()"
+                class="rounded-full w-12 h-12 mx-auto"
+                alt=""
+              />
+            </td>
+            <td class="leading-tight pl-2 md:pl-0">
+              {{ faker.name.findName() }} <br />
+              <span class="text-gray-500 text-sm">000045</span>
+            </td>
+            <td>Aug. 10, 2018</td>
+            <td>In 2 days</td>
+            <td class="leading-tight">
+              {{
+                toCurrency(
+                  faker.random.number({
+                    min: 100,
+                    max: 9000,
+                  }),
+                )
+              }}
+              <br />
+              <span class="text-gray-500 text-sm">EU</span>
+            </td>
+            <td>
+              <span
+                class="bg-yellow-vivid-100 rounded-full px-3 py-1 text-yellow-vivid-800"
+              >
+                Pending
+              </span>
+            </td>
+            <td>
+              <button class="text-light-blue-vivid-700 hover:underline">
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="hidden md:table-cell">
+              <img
+                :src="faker.internet.avatar()"
+                class="rounded-full w-12 h-12 mx-auto"
+                alt=""
+              />
+            </td>
+            <td class="leading-tight pl-2 md:pl-0">
+              {{ faker.name.findName() }} <br />
+              <span class="text-gray-500 text-sm">000044</span>
+            </td>
+            <td>Aug. 7, 2018</td>
+            <td>Yesterday</td>
+            <td class="leading-tight">
+              {{
+                toCurrency(
+                  faker.random.number({
+                    min: 100,
+                    max: 9000,
+                  }),
+                )
+              }}
+              <br />
+              <span class="text-gray-500 text-sm">EU</span>
+            </td>
+            <td>
+              <span class="bg-red-vivid-100 rounded-full px-3 py-1 text-red-vivid-800">
+                Overdue
+              </span>
+            </td>
+            <td>
+              <button class="text-light-blue-vivid-700 hover:underline">
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="hidden md:table-cell">
+              <img
+                :src="faker.internet.avatar()"
+                class="rounded-full w-12 h-12 mx-auto"
+                alt=""
+              />
+            </td>
+            <td class="leading-tight pl-2 md:pl-0">
+              {{ faker.name.findName() }} <br />
+              <span class="text-gray-500 text-sm">000043</span>
+            </td>
+            <td>Jul. 23, 2018</td>
+            <td>16 days ago</td>
+            <td class="leading-tight">
+              {{
+                toCurrency(
+                  faker.random.number({
+                    min: 100,
+                    max: 9000,
+                  }),
+                )
+              }}
+              <br />
+              <span class="text-gray-500 text-sm">EU</span>
+            </td>
+            <td>
+              <span class="bg-teal-200 rounded-full px-3 py-1 text-teal-800">
+                Paid
+              </span>
+            </td>
+            <td>
+              <button class="text-light-blue-vivid-700 hover:underline">
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="hidden md:table-cell">
+              <img
+                :src="faker.internet.avatar()"
+                class="rounded-full w-12 h-12 mx-auto"
+                alt=""
+              />
+            </td>
+            <td class="leading-tight pl-2 md:pl-0">
+              {{ faker.name.findName() }} <br />
+              <span class="text-gray-500 text-sm">000042</span>
+            </td>
+            <td>Jul. 13, 2018</td>
+            <td>1 month ago</td>
+            <td class="leading-tight">
+              {{
+                toCurrency(
+                  faker.random.number({
+                    min: 100,
+                    max: 9000,
+                  }),
+                )
+              }}
+              <br />
+              <span class="text-gray-500 text-sm">EU</span>
+            </td>
+            <td>
+              <span class="bg-teal-200 rounded-full px-3 py-1 text-teal-800">
+                Paid
+              </span>
+            </td>
+            <td>
+              <button class="text-light-blue-vivid-700 hover:underline">
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="hidden md:table-cell">
+              <img
+                :src="faker.internet.avatar()"
+                class="rounded-full w-12 h-12 mx-auto"
+                alt=""
+              />
+            </td>
+            <td class="leading-tight pl-2 md:pl-0">
+              {{ faker.name.findName() }} <br />
+              <span class="text-gray-500 text-sm">000041</span>
+            </td>
+            <td>Jul. 9, 2018</td>
+            <td>1 month ago</td>
+            <td class="leading-tight">
+              {{
+                toCurrency(
+                  faker.random.number({
+                    min: 100,
+                    max: 9000,
+                  }),
+                )
+              }}
+              <br />
+              <span class="text-gray-500 text-sm">EU</span>
+            </td>
+            <td>
+              <span class="bg-teal-200 rounded-full px-3 py-1 text-teal-800">
+                Paid
+              </span>
+            </td>
+            <td>
+              <button class="text-light-blue-vivid-700 hover:underline">
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="hidden md:table-cell">
+              <img
+                :src="faker.internet.avatar()"
+                class="rounded-full w-12 h-12 mx-auto"
+                alt=""
+              />
+            </td>
+            <td class="leading-tight pl-2 md:pl-0">
+              {{ faker.name.findName() }} <br />
+              <span class="text-gray-500 text-sm">000040</span>
+            </td>
+            <td>Jul. 6, 2018</td>
+            <td>1 month ago</td>
+            <td class="leading-tight">
+              {{
+                toCurrency(
+                  faker.random.number({
+                    min: 100,
+                    max: 9000,
+                  }),
+                )
+              }}
+              <br />
+              <span class="text-gray-500 text-sm">EU</span>
+            </td>
+            <td>
+              <span class="bg-teal-200 rounded-full px-3 py-1 text-teal-800">
+                Paid
+              </span>
+            </td>
+            <td>
+              <button class="text-light-blue-vivid-700 hover:underline">
+                View
+              </button>
+            </td>
+          </tr>
+        </table>
+
+        <table class="table sm:hidden w-full text-left">
+          <tr>
+            <th class="uppercase pl-3 w-1/2">Client</th>
+            <th class="uppercase w-1/2 text-right pr-8">Amount</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td class="pl-3 w-1/2">
+              {{ faker.name.findName() }} <br />
+              <span class="text-gray-500 text-sm">000045</span>
+            </td>
+            <td class="w-1/2 text-right pr-8">
+              <div class="inline-flex items-center">
+                <span
+                  class="inline-block w-4 h-4 mr-2 bg-yellow-vivid-200 rounded-full"
+                ></span>
+                {{
+                  toCurrency(
+                    faker.random.number({
+                      min: 100,
+                      max: 9000,
+                    }),
+                  )
+                }}
+              </div>
+              <br />
+              <span class="text-gray-500 text-sm">EU</span>
+            </td>
+            <td class="pr-2">
+              <button
+                class="bg-gray-100 text-gray-600 rounded-full w-6 h-6 flex justify-center cursor-pointer"
+              >
+                <span>
+                  <svg
+                    class="fill-current h-3 w-3"
+                    viewBox="0 0 8 12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m5.293 6.95.707.707 5.657-5.657-1.414-1.414-4.243 4.242-4.243-4.242-1.414 1.414z"
+                      transform="matrix(0 -1 1 0 0 12)"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="pl-3 w-1/2">
+              {{ faker.name.findName() }} <br />
+              <span class="text-gray-500 text-sm">000044</span>
+            </td>
+            <td class="w-1/2 text-right pr-8">
+              <div class="inline-flex items-center">
+                <span
+                  class="inline-block w-4 h-4 mr-2 bg-red-vivid-200 rounded-full"
+                ></span>
+                {{
+                  toCurrency(
+                    faker.random.number({
+                      min: 100,
+                      max: 9000,
+                    }),
+                  )
+                }}
+              </div>
+              <br />
+              <span class="text-gray-500 text-sm">EU</span>
+            </td>
+            <td class="pr-2">
+              <button
+                class="bg-gray-100 text-gray-600 rounded-full w-6 h-6 flex justify-center cursor-pointer"
+              >
+                <span>
+                  <svg
+                    class="fill-current h-3 w-3"
+                    viewBox="0 0 8 12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m5.293 6.95.707.707 5.657-5.657-1.414-1.414-4.243 4.242-4.243-4.242-1.414 1.414z"
+                      transform="matrix(0 -1 1 0 0 12)"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="pl-3 w-1/2">
+              {{ faker.name.findName() }} <br />
+              <span class="text-gray-500 text-sm">000043</span>
+            </td>
+            <td class="w-1/2 text-right pr-8">
+              <div class="inline-flex items-center">
+                {{
+                  toCurrency(
+                    faker.random.number({
+                      min: 100,
+                      max: 9000,
+                    }),
+                  )
+                }}
+              </div>
+              <br />
+              <span class="text-gray-500 text-sm">EU</span>
+            </td>
+            <td class="pr-2">
+              <button
+                class="bg-gray-100 text-gray-600 rounded-full w-6 h-6 flex justify-center cursor-pointer"
+              >
+                <span>
+                  <svg
+                    class="fill-current h-3 w-3"
+                    viewBox="0 0 8 12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m5.293 6.95.707.707 5.657-5.657-1.414-1.414-4.243 4.242-4.243-4.242-1.414 1.414z"
+                      transform="matrix(0 -1 1 0 0 12)"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="pl-3 w-1/2">
+              {{ faker.name.findName() }} <br />
+              <span class="text-gray-500 text-sm">000042</span>
+            </td>
+            <td class="w-1/2 text-right pr-8">
+              <div class="inline-flex items-center">
+                {{
+                  toCurrency(
+                    faker.random.number({
+                      min: 100,
+                      max: 9000,
+                    }),
+                  )
+                }}
+              </div>
+              <br />
+              <span class="text-gray-500 text-sm">EU</span>
+            </td>
+            <td class="pr-2">
+              <button
+                class="bg-gray-100 text-gray-600 rounded-full w-6 h-6 flex justify-center cursor-pointer"
+              >
+                <span>
+                  <svg
+                    class="fill-current h-3 w-3"
+                    viewBox="0 0 8 12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m5.293 6.95.707.707 5.657-5.657-1.414-1.414-4.243 4.242-4.243-4.242-1.414 1.414z"
+                      transform="matrix(0 -1 1 0 0 12)"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="pl-3 w-1/2">
+              {{ faker.name.findName() }} <br />
+              <span class="text-gray-500 text-sm">000041</span>
+            </td>
+            <td class="w-1/2 text-right pr-8">
+              <div class="inline-flex items-center">
+                {{
+                  toCurrency(
+                    faker.random.number({
+                      min: 100,
+                      max: 9000,
+                    }),
+                  )
+                }}
+              </div>
+              <br />
+              <span class="text-gray-500 text-sm">EU</span>
+            </td>
+            <td class="pr-2">
+              <button
+                class="bg-gray-100 text-gray-600 rounded-full w-6 h-6 flex justify-center cursor-pointer"
+              >
+                <span>
+                  <svg
+                    class="fill-current h-3 w-3"
+                    viewBox="0 0 8 12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m5.293 6.95.707.707 5.657-5.657-1.414-1.414-4.243 4.242-4.243-4.242-1.414 1.414z"
+                      transform="matrix(0 -1 1 0 0 12)"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="pl-3 w-1/2">
+              {{ faker.name.findName() }} <br />
+              <span class="text-gray-500 text-sm">000040</span>
+            </td>
+            <td class="w-1/2 text-right pr-8">
+              <div class="inline-flex items-center">
+                {{
+                  toCurrency(
+                    faker.random.number({
+                      min: 100,
+                      max: 9000,
+                    }),
+                  )
+                }}
+              </div>
+              <br />
+              <span class="text-gray-500 text-sm">EU</span>
+            </td>
+            <td class="pr-2">
+              <button
+                class="bg-gray-100 text-gray-600 rounded-full w-6 h-6 flex justify-center cursor-pointer"
+              >
+                <span>
+                  <svg
+                    class="fill-current h-3 w-3"
+                    viewBox="0 0 8 12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m5.293 6.95.707.707 5.657-5.657-1.414-1.414-4.243 4.242-4.243-4.242-1.414 1.414z"
+                      transform="matrix(0 -1 1 0 0 12)"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </Layout>
 </template>
 
 <script>
+import faker from 'faker'
+
 export default {
   metaInfo: {
     title: 'Dashboard',
   },
+  data: function() {
+    return { faker }
+  },
+  methods: {
+    /**
+     * @param {number} number
+     * @returns {string}
+     */
+    toCurrency(number) {
+      return number.toLocaleString('en-GB', { style: 'currency', currency: 'EUR' })
+    },
+  },
 }
 </script>
+
+<style lang="postcss">
+.gradient-blue {
+  background-image: linear-gradient(to top right, #127fbf 0%, #0b69a3 70%);
+}
+.table td,
+.table th {
+  @apply py-4;
+}
+
+.table th {
+  @apply uppercase;
+}
+
+.table tr:nth-of-type(odd) {
+  @apply bg-gray-075;
+}
+</style>
