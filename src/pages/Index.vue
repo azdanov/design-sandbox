@@ -21,9 +21,22 @@
               <div
                 class="absolute right-0 rounded-bl inline-block bg-yellow-400 text-center p-2"
               >
-                <span class="text-yellow-800 text-xl">Settings</span>
+                <span class="text-yellow-900 text-xl">Settings</span>
               </div>
               <g-image src="@/images/settings.png"></g-image>
+            </g-link>
+          </div>
+          <div class="w-1/2 px-3">
+            <g-link
+              to="/dashboard"
+              class="block border border-gray-100 rounded hover:shadow-lg relative"
+            >
+              <div
+                class="absolute right-0 rounded-bl inline-block bg-yellow-400 text-center p-2"
+              >
+                <span class="text-yellow-900 text-xl">Dashboard</span>
+              </div>
+              <g-image src="@/images/dashboard.png"></g-image>
             </g-link>
           </div>
         </div>
