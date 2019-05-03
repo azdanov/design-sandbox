@@ -81,7 +81,7 @@ query {
 </static-query>
 
 <script>
-import Logo from '@/images/logo.svg'
+import Logo from '../images/logo.svg'
 export default {
   components: {
     Logo,
