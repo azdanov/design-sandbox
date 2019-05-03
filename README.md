@@ -1,4 +1,4 @@
-# Design Sandbox
+# Design Sandbox · [![Build Status](https://travis-ci.com/azdanov/design-sandbox.svg?branch=master)](https://travis-ci.com/azdanov/design-sandbox)
 
 Playing around with Gridsome and Tailwind CSS. Think of this project as a giant sandbox of design. The goal is to try out different ideas, and realize them in a real project.
 
