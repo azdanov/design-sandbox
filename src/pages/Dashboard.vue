@@ -5,126 +5,7 @@
     </section>
 
     <div class="px-3 mx-auto w-full lg:w-10/12">
-      <div class="mt-8 my-10">
-        <h2 class="text-xl mb-3 text-light-blue-vivid-900">Recent Invoices</h2>
-        <section class="flex flex-wrap justify-between -mx-3">
-          <div
-            class="w-full md:flex-1 flex flex-col my-3 mx-3 shadow-md bg-white rounded-lg"
-          >
-            <div class="flex-1 px-5 py-4">
-              <div class="flex flex-wrap justify-between">
-                <p class="font-bold text-light-blue-vivid-900">
-                  {{ faker.name.findName() }}
-                </p>
-                <span
-                  class="inline-block bg-yellow-vivid-100 rounded-full px-3 text-yellow-vivid-800"
-                >
-                  Pending
-                </span>
-              </div>
-              <p class="text-2xl text-light-blue-vivid-800">
-                €3,400
-              </p>
-              <p class="text-gray-500">
-                Due in 2 days
-              </p>
-            </div>
-            <button
-              class="py-2 bg-gray-075 hover:bg-gray-100 text-gray-700 w-full justify-center flex items-center focus:outline-none focus:shadow-outline"
-            >
-              View Invoice
-              <span class="ml-2 text-gray-500">
-                <svg
-                  class="fill-current h-3 w-3"
-                  viewBox="0 0 8 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m5.293 6.95.707.707 5.657-5.657-1.414-1.414-4.243 4.242-4.243-4.242-1.414 1.414z"
-                    transform="matrix(0 -1 1 0 0 12)"
-                  />
-                </svg>
-              </span>
-            </button>
-          </div>
-          <div
-            class="w-full md:flex-1 flex flex-col my-3 mx-3 shadow-md bg-white rounded-lg"
-          >
-            <div class="flex-1 px-5 py-4">
-              <div class="flex flex-wrap justify-between">
-                <p class="font-bold text-light-blue-vivid-900">
-                  {{ faker.name.findName() }}
-                </p>
-                <span
-                  class="inline-block bg-red-vivid-100 rounded-full px-3 text-red-vivid-800"
-                >
-                  Overdue
-                </span>
-              </div>
-              <p class="text-2xl text-light-blue-vivid-800">
-                €500
-              </p>
-              <p class="text-gray-500">
-                Due Yesterday
-              </p>
-            </div>
-            <button
-              class="py-2 bg-gray-075 hover:bg-gray-100 text-gray-700 w-full justify-center flex items-center focus:outline-none focus:shadow-outline"
-            >
-              View Invoice
-              <span class="ml-2 text-gray-500">
-                <svg
-                  class="fill-current h-3 w-3"
-                  viewBox="0 0 8 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m5.293 6.95.707.707 5.657-5.657-1.414-1.414-4.243 4.242-4.243-4.242-1.414 1.414z"
-                    transform="matrix(0 -1 1 0 0 12)"
-                  />
-                </svg>
-              </span>
-            </button>
-          </div>
-          <div
-            class="w-full md:flex-1 flex flex-col my-3 mx-3 shadow-md bg-white rounded-lg"
-          >
-            <div class="flex-1 px-5 py-4">
-              <div class="flex flex-wrap justify-between">
-                <p class="font-bold text-light-blue-vivid-900">
-                  {{ faker.name.findName() }}
-                </p>
-                <span class="inline-block bg-teal-200 rounded-full px-3 text-teal-800">
-                  Paid
-                </span>
-              </div>
-              <p class="text-2xl text-light-blue-vivid-800">
-                €5,200
-              </p>
-              <p class="text-gray-500">
-                Due 16 days ago
-              </p>
-            </div>
-            <button
-              class="py-2 bg-gray-075 hover:bg-gray-100 text-gray-700 w-full justify-center flex items-center focus:outline-none focus:shadow-outline"
-            >
-              View Invoice
-              <span class="ml-2 text-gray-500">
-                <svg
-                  class="fill-current h-3 w-3"
-                  viewBox="0 0 8 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m5.293 6.95.707.707 5.657-5.657-1.414-1.414-4.243 4.242-4.243-4.242-1.414 1.414z"
-                    transform="matrix(0 -1 1 0 0 12)"
-                  />
-                </svg>
-              </span>
-            </button>
-          </div>
-        </section>
-      </div>
+      <RecentInvoices :items="invoices" class="mt-8 my-10"></RecentInvoices>
 
       <div class="mt-8 mb-12">
         <h2 class="text-xl mb-3 text-light-blue-vivid-900">All Invoices</h2>
@@ -532,10 +413,12 @@
 <script>
 import faker from 'faker'
 import Overview from '@/components/Dashboard/Overview'
+import RecentInvoices from '@/components/Dashboard/RecentInvoices'
 
 export default {
   components: {
     Overview,
+    RecentInvoices,
   },
   metaInfo: {
     title: 'Dashboard',
@@ -547,6 +430,29 @@ export default {
         { title: 'Overdue', description: this.price(), action: 'View all' },
         { title: 'Total', description: this.price(), action: 'View all' },
         { title: 'In Draft', description: this.price(), action: 'View all' },
+      ],
+      invoices: [
+        {
+          title: faker.name.findName(),
+          status: 'Pending',
+          price: this.price(),
+          date: 'Due in 2 days',
+          action: 'View Invoice',
+        },
+        {
+          title: faker.name.findName(),
+          status: 'Overdue',
+          price: this.price(),
+          date: 'Due Yesterday',
+          action: 'View Invoice',
+        },
+        {
+          title: faker.name.findName(),
+          status: 'Paid',
+          price: this.price(),
+          date: 'Due 16 days ago',
+          action: 'View Invoice',
+        },
       ],
     }
   },
@@ -575,7 +481,7 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style>
 .gradient-blue {
   background-image: linear-gradient(to top right, #127fbf 0%, #0b69a3 70%);
 }
