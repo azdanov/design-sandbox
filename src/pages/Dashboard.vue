@@ -1,83 +1,7 @@
 <template>
-  <Layout bland="true">
+  <Layout :bland="true">
     <section class="gradient-blue py-2">
-      <div class="flex justify-between w-full lg:w-10/12 mx-auto">
-        <div class="flex-1 pr-6">
-          <div class="py-3 flex flex-col items-center">
-            <h3 class="font-bold uppercase text-light-blue-vivid-100">
-              Overdue
-            </h3>
-            <p class="text-white text-4xl font-light">€500</p>
-            <button
-              class="bg-light-blue-vivid-800 border-light-blue-vivid-800 hover:border-light-blue-vivid-900 hover:bg-light-blue-vivid-900 focus:shadow-outline focus:outline-none text-white font-bold py-1 px-3 mt-2 rounded-full cursor-pointer flex items-center"
-            >
-              View all
-              <span class="ml-2">
-                <svg
-                  class="fill-current h-3 w-3"
-                  viewBox="0 0 8 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m5.293 6.95.707.707 5.657-5.657-1.414-1.414-4.243 4.242-4.243-4.242-1.414 1.414z"
-                    transform="matrix(0 -1 1 0 0 12)"
-                  />
-                </svg>
-              </span>
-            </button>
-          </div>
-        </div>
-        <div class="flex-1 px-3">
-          <div class="py-3 flex flex-col items-center">
-            <h3 class="font-bold uppercase text-light-blue-vivid-100">
-              Total&nbsp;Outstanding
-            </h3>
-            <p class="text-white text-4xl font-light">€3,900</p>
-            <button
-              class="bg-light-blue-vivid-800 border-light-blue-vivid-800 hover:border-light-blue-vivid-900 hover:bg-light-blue-vivid-900  hover:bg-light-blue-vivid-500 focus:shadow-outline focus:outline-none text-white font-bold py-1 px-3 mt-2 rounded-full cursor-pointer flex items-center"
-            >
-              View all
-              <span class="ml-2">
-                <svg
-                  class="fill-current h-3 w-3"
-                  viewBox="0 0 8 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m5.293 6.95.707.707 5.657-5.657-1.414-1.414-4.243 4.242-4.243-4.242-1.414 1.414z"
-                    transform="matrix(0 -1 1 0 0 12)"
-                  />
-                </svg>
-              </span>
-            </button>
-          </div>
-        </div>
-        <div class="flex-1 px-3">
-          <div class="py-3 flex flex-col items-center">
-            <h3 class="font-bold uppercase text-light-blue-vivid-100">
-              In Draft
-            </h3>
-            <p class="text-white text-4xl font-light">€3,400</p>
-            <button
-              class="bg-light-blue-vivid-800 border-light-blue-vivid-800 hover:border-light-blue-vivid-900 hover:bg-light-blue-vivid-900  hover:bg-light-blue-vivid-500 focus:shadow-outline focus:outline-none text-white font-bold py-1 px-3 mt-2 rounded-full cursor-pointer flex items-center"
-            >
-              View all
-              <span class="ml-2">
-                <svg
-                  class="fill-current h-3 w-3"
-                  viewBox="0 0 8 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m5.293 6.95.707.707 5.657-5.657-1.414-1.414-4.243 4.242-4.243-4.242-1.414 1.414z"
-                    transform="matrix(0 -1 1 0 0 12)"
-                  />
-                </svg>
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
+      <Overview :items="overviews"></Overview>
     </section>
 
     <div class="px-3 mx-auto w-full lg:w-10/12">
@@ -232,14 +156,7 @@
             <td>Aug. 10, 2018</td>
             <td>In 2 days</td>
             <td class="leading-tight">
-              {{
-                toCurrency(
-                  faker.random.number({
-                    min: 100,
-                    max: 9000,
-                  }),
-                )
-              }}
+              {{ price() }}
               <br />
               <span class="text-gray-500 text-sm">EU</span>
             </td>
@@ -271,14 +188,7 @@
             <td>Aug. 7, 2018</td>
             <td>Yesterday</td>
             <td class="leading-tight">
-              {{
-                toCurrency(
-                  faker.random.number({
-                    min: 100,
-                    max: 9000,
-                  }),
-                )
-              }}
+              {{ price() }}
               <br />
               <span class="text-gray-500 text-sm">EU</span>
             </td>
@@ -308,14 +218,7 @@
             <td>Jul. 23, 2018</td>
             <td>16 days ago</td>
             <td class="leading-tight">
-              {{
-                toCurrency(
-                  faker.random.number({
-                    min: 100,
-                    max: 9000,
-                  }),
-                )
-              }}
+              {{ price() }}
               <br />
               <span class="text-gray-500 text-sm">EU</span>
             </td>
@@ -345,14 +248,7 @@
             <td>Jul. 13, 2018</td>
             <td>1 month ago</td>
             <td class="leading-tight">
-              {{
-                toCurrency(
-                  faker.random.number({
-                    min: 100,
-                    max: 9000,
-                  }),
-                )
-              }}
+              {{ price() }}
               <br />
               <span class="text-gray-500 text-sm">EU</span>
             </td>
@@ -382,14 +278,7 @@
             <td>Jul. 9, 2018</td>
             <td>1 month ago</td>
             <td class="leading-tight">
-              {{
-                toCurrency(
-                  faker.random.number({
-                    min: 100,
-                    max: 9000,
-                  }),
-                )
-              }}
+              {{ price() }}
               <br />
               <span class="text-gray-500 text-sm">EU</span>
             </td>
@@ -419,14 +308,7 @@
             <td>Jul. 6, 2018</td>
             <td>1 month ago</td>
             <td class="leading-tight">
-              {{
-                toCurrency(
-                  faker.random.number({
-                    min: 100,
-                    max: 9000,
-                  }),
-                )
-              }}
+              {{ price() }}
               <br />
               <span class="text-gray-500 text-sm">EU</span>
             </td>
@@ -459,14 +341,7 @@
                 <span
                   class="inline-block w-4 h-4 mr-2 bg-yellow-vivid-200 rounded-full"
                 ></span>
-                {{
-                  toCurrency(
-                    faker.random.number({
-                      min: 100,
-                      max: 9000,
-                    }),
-                  )
-                }}
+                {{ price() }}
               </div>
               <br />
               <span class="text-gray-500 text-sm">EU</span>
@@ -500,14 +375,7 @@
                 <span
                   class="inline-block w-4 h-4 mr-2 bg-red-vivid-200 rounded-full"
                 ></span>
-                {{
-                  toCurrency(
-                    faker.random.number({
-                      min: 100,
-                      max: 9000,
-                    }),
-                  )
-                }}
+                {{ price() }}
               </div>
               <br />
               <span class="text-gray-500 text-sm">EU</span>
@@ -538,14 +406,7 @@
             </td>
             <td class="w-1/2 text-right pr-8">
               <div class="inline-flex items-center">
-                {{
-                  toCurrency(
-                    faker.random.number({
-                      min: 100,
-                      max: 9000,
-                    }),
-                  )
-                }}
+                {{ price() }}
               </div>
               <br />
               <span class="text-gray-500 text-sm">EU</span>
@@ -576,14 +437,7 @@
             </td>
             <td class="w-1/2 text-right pr-8">
               <div class="inline-flex items-center">
-                {{
-                  toCurrency(
-                    faker.random.number({
-                      min: 100,
-                      max: 9000,
-                    }),
-                  )
-                }}
+                {{ price() }}
               </div>
               <br />
               <span class="text-gray-500 text-sm">EU</span>
@@ -614,14 +468,7 @@
             </td>
             <td class="w-1/2 text-right pr-8">
               <div class="inline-flex items-center">
-                {{
-                  toCurrency(
-                    faker.random.number({
-                      min: 100,
-                      max: 9000,
-                    }),
-                  )
-                }}
+                {{ price() }}
               </div>
               <br />
               <span class="text-gray-500 text-sm">EU</span>
@@ -652,14 +499,7 @@
             </td>
             <td class="w-1/2 text-right pr-8">
               <div class="inline-flex items-center">
-                {{
-                  toCurrency(
-                    faker.random.number({
-                      min: 100,
-                      max: 9000,
-                    }),
-                  )
-                }}
+                {{ price() }}
               </div>
               <br />
               <span class="text-gray-500 text-sm">EU</span>
@@ -691,13 +531,24 @@
 
 <script>
 import faker from 'faker'
+import Overview from '@/components/Dashboard/Overview'
 
 export default {
+  components: {
+    Overview,
+  },
   metaInfo: {
     title: 'Dashboard',
   },
   data: function() {
-    return { faker }
+    return {
+      faker,
+      overviews: [
+        { title: 'Overdue', description: this.price(), action: 'View all' },
+        { title: 'Total', description: this.price(), action: 'View all' },
+        { title: 'In Draft', description: this.price(), action: 'View all' },
+      ],
+    }
   },
   methods: {
     /**
@@ -705,7 +556,20 @@ export default {
      * @returns {string}
      */
     toCurrency(number) {
-      return number.toLocaleString('en-GB', { style: 'currency', currency: 'EUR' })
+      return number.toLocaleString('en-GB', {
+        style: 'currency',
+        currency: 'EUR',
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
+      })
+    },
+    price() {
+      return this.toCurrency(
+        faker.random.number({
+          min: 100,
+          max: 9000,
+        }),
+      )
     },
   },
 }
