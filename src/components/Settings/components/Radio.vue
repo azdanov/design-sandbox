@@ -30,32 +30,32 @@ export default {
   props: {
     tier: {
       type: String,
-      required: true,
+      required: true
     },
     quantity: {
       type: String,
-      required: true,
+      required: true
     },
     price: {
       type: String,
-      required: true,
+      required: true
     },
     selected: {
       type: String,
-      required: true,
-    },
+      required: true
+    }
   },
   computed: {
     tierLower() {
-      return this.tier.toLowerCase()
-    },
+      return this.tier.toLowerCase();
+    }
   },
   methods: {
     handleSelect() {
-      this.$emit('selected', this.tierLower)
-    },
-  },
-}
+      this.$emit("selected", this.tierLower);
+    }
+  }
+};
 </script>
 
 <style lang="postcss">
@@ -94,7 +94,7 @@ export default {
 
 .radio__input:checked + .radio__label .checkmark:before {
   @apply absolute bg-white;
-  content: '';
+  content: "";
   width: 2px;
   height: 10px;
   left: 11px;
@@ -103,7 +103,7 @@ export default {
 
 .radio__input:checked + .radio__label .checkmark:after {
   @apply absolute bg-white;
-  content: '';
+  content: "";
   width: 5px;
   height: 2px;
   left: 7px;

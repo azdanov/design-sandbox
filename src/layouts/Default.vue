@@ -4,8 +4,10 @@
   >
     <header
       :class="[
-        bland ? '' : 'bg-yellow-vivid-300 gradient-yellow border-b-2 border-gray-800',
-        'px-8',
+        bland
+          ? ''
+          : 'bg-yellow-vivid-300 gradient-yellow border-b-2 border-gray-800',
+        'px-8'
       ]"
     >
       <nav class="flex items-center justify-between flex-wrap py-3">
@@ -33,7 +35,7 @@
         <ul
           :class="[
             menuOpen ? 'hidden' : 'block',
-            'text-xl list-reset ml-auto -mb-2 w-full md:flex md:items-center md:w-auto',
+            'text-xl list-reset ml-auto -mb-2 w-full md:flex md:items-center md:w-auto'
           ]"
         >
           <!-- <li>
@@ -81,30 +83,30 @@ query {
 </static-query>
 
 <script>
-import Logo from '../images/logo.svg'
+import Logo from "../images/logo.svg";
 export default {
   components: {
-    Logo,
+    Logo
   },
   props: {
     bland: {
-      type: Boolean,
-    },
+      type: Boolean
+    }
   },
   data: function() {
     return {
-      menuOpen: false,
-    }
+      menuOpen: false
+    };
   },
   methods: {
     getYear() {
-      return new Date().getFullYear()
+      return new Date().getFullYear();
     },
     toggleMenu() {
-      this.menuOpen = !this.menuOpen
-    },
-  },
-}
+      this.menuOpen = !this.menuOpen;
+    }
+  }
+};
 </script>
 
 <style lang="postcss">

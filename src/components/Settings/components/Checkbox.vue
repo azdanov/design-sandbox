@@ -20,18 +20,18 @@ export default {
   props: {
     title: {
       type: String,
-      required: true,
+      required: true
     },
     description: {
       type: String,
-      required: true,
+      required: true
     },
     checked: {
       type: Boolean,
-      required: false,
-    },
-  },
-}
+      required: false
+    }
+  }
+};
 </script>
 
 <style lang="postcss">
@@ -45,17 +45,17 @@ export default {
 
 .checkbox__input + .checkbox__label::before {
   @apply w-5 h-5 rounded border border-light-blue-vivid-600 absolute left-0 top-0 mt-1;
-  content: '';
+  content: "";
 }
 
 .checkbox__input:focus + .checkbox__label::before {
   @apply shadow-outline outline-none;
-  content: '';
+  content: "";
 }
 
 .checkbox__input:checked + .checkbox__label::before {
   @apply bg-light-blue-vivid-600;
-  content: '';
+  content: "";
 }
 
 .checkbox__input:checked + .checkbox__label .checkmark {
@@ -67,7 +67,7 @@ export default {
 
 .checkbox__input:checked + .checkbox__label .checkmark:before {
   @apply absolute bg-white;
-  content: '';
+  content: "";
   width: 2px;
   height: 10px;
   left: 11px;
@@ -76,7 +76,7 @@ export default {
 
 .checkbox__input:checked + .checkbox__label .checkmark:after {
   @apply absolute bg-white;
-  content: '';
+  content: "";
   width: 5px;
   height: 2px;
   left: 7px;

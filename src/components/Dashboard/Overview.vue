@@ -12,14 +12,14 @@
 </template>
 
 <script>
-import Action from './components/Action'
+import Action from "./components/Action";
 
 export default {
   components: {
-    Action,
+    Action
   },
-  props: { items: { type: Array, require: true, default: () => [] } },
-}
+  props: { items: { type: Array, require: true, default: () => [] } }
+};
 </script>
 
 <style></style>

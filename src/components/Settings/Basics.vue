@@ -4,8 +4,8 @@
       <div class="w-full md:w-4/12 mb-3 md:mb-0">
         <legend class="text-lg">Basics</legend>
         <small class="text-gray-600 block pt-1 pb-2"
-          >Having an up-to-date email address attached to your account is a great step
-          towar improved account security</small
+          >Having an up-to-date email address attached to your account is a
+          great step towar improved account security</small
         >
       </div>
       <div class="w-full md:w-7/12">
@@ -86,18 +86,18 @@
 </template>
 
 <script>
-import Input from './components/Input'
+import Input from "./components/Input";
 
 export default {
   components: {
-    'd-input': Input,
+    "d-input": Input
   },
   data: function() {
     return {
-      email: 'jsmith@example.com',
-    }
-  },
-}
+      email: "jsmith@example.com"
+    };
+  }
+};
 </script>
 
 <style></style>

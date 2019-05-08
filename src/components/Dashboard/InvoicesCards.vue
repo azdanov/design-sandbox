@@ -16,16 +16,16 @@
 </template>
 
 <script>
-import faker from 'faker'
-import Card from './components/Card'
+import faker from "faker";
+import Card from "./components/Card";
 
 export default {
   components: { Card },
   props: { items: { type: Array, require: true, default: () => [] } },
   data: function() {
-    return { faker }
-  },
-}
+    return { faker };
+  }
+};
 </script>
 
 <style scoped></style>

@@ -16,11 +16,11 @@
 </template>
 
 <script>
-import Basics from '../components/Settings/Basics'
-import Profile from '../components/Settings/Profile'
-import Billing from '../components/Settings/Billing'
-import Notifications from '../components/Settings/Notifications'
-import Actions from '../components/Settings/Actions'
+import Basics from "../components/Settings/Basics";
+import Profile from "../components/Settings/Profile";
+import Billing from "../components/Settings/Billing";
+import Notifications from "../components/Settings/Notifications";
+import Actions from "../components/Settings/Actions";
 
 export default {
   components: {
@@ -28,13 +28,12 @@ export default {
     Profile,
     Billing,
     Notifications,
-    Actions,
+    Actions
   },
   metaInfo: {
-    title: 'Settings',
-  },
-}
+    title: "Settings"
+  }
+};
 </script>
 
-<style>
-</style>
+<style></style>

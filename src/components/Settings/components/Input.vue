@@ -17,27 +17,27 @@ export default {
   props: {
     label: {
       type: String,
-      required: true,
+      required: true
     },
     type: {
       type: String,
-      required: true,
+      required: true
     },
     placeholder: {
       type: String,
-      required: true,
+      required: true
     },
     value: {
       type: String,
-      required: true,
-    },
+      required: true
+    }
   },
   computed: {
     labelLower() {
-      return this.label.toLowerCase()
-    },
-  },
-}
+      return this.label.toLowerCase();
+    }
+  }
+};
 </script>
 
 <style></style>

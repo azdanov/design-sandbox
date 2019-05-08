@@ -1,5 +1,7 @@
 <template>
-  <div class="w-full md:flex-1 flex flex-col my-3 mx-3 shadow-md bg-white rounded-lg">
+  <div
+    class="w-full md:flex-1 flex flex-col my-3 mx-3 shadow-md bg-white rounded-lg"
+  >
     <div class="flex-1 px-5 py-4">
       <div class="flex flex-wrap justify-between">
         <p class="font-bold text-light-blue-vivid-900">
@@ -35,20 +37,20 @@
 </template>
 
 <script>
-import Badge from './Badge'
+import Badge from "./Badge";
 
 export default {
   components: {
-    Badge,
+    Badge
   },
   props: {
     title: { type: String, required: true },
     status: { type: String, required: true },
     description: { type: String, required: true },
     date: { type: String, required: true },
-    action: { type: String, required: true },
-  },
-}
+    action: { type: String, required: true }
+  }
+};
 </script>
 
 <style scoped></style>

@@ -92,20 +92,20 @@
 </template>
 
 <script>
-import faker from 'faker'
-import Badge from './components/Badge'
-import CircleBadge from './components/CircleBadge'
+import faker from "faker";
+import Badge from "./components/Badge";
+import CircleBadge from "./components/CircleBadge";
 
 export default {
   components: {
     CircleBadge,
-    Badge,
+    Badge
   },
   props: { items: { type: Array, require: true, default: () => [] } },
   data: function() {
     return {
-      faker,
-    }
+      faker
+    };
   },
   methods: {
     /**
@@ -113,23 +113,23 @@ export default {
      * @returns {string}
      */
     toCurrency(number) {
-      return number.toLocaleString('en-GB', {
-        style: 'currency',
-        currency: 'EUR',
+      return number.toLocaleString("en-GB", {
+        style: "currency",
+        currency: "EUR",
         minimumFractionDigits: 0,
-        maximumFractionDigits: 0,
-      })
+        maximumFractionDigits: 0
+      });
     },
     price() {
       return this.toCurrency(
         faker.random.number({
           min: 100,
-          max: 9000,
-        }),
-      )
-    },
-  },
-}
+          max: 9000
+        })
+      );
+    }
+  }
+};
 </script>
 
 <style>

@@ -4,8 +4,8 @@
       <div class="w-full md:w-4/12 mb-3 md:mb-0">
         <legend class="text-lg">Profile</legend>
         <small class="text-gray-600 block pt-1 pb-2"
-          >This information will be shown publicly so be careful what information is
-          provided</small
+          >This information will be shown publicly so be careful what
+          information is provided</small
         >
       </div>
       <div class="w-full md:w-7/12">
@@ -60,20 +60,20 @@ One mission age see firm language resource trouble. School state TV argue go. Su
 </template>
 
 <script>
-import Input from './components/Input'
+import Input from "./components/Input";
 
 export default {
   components: {
-    'd-input': Input,
+    "d-input": Input
   },
   data: function() {
     return {
-      first_name: 'John',
-      last_name: 'Smith',
-      username: 'JSmith',
-    }
-  },
-}
+      first_name: "John",
+      last_name: "Smith",
+      username: "JSmith"
+    };
+  }
+};
 </script>
 
 <style></style>

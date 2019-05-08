@@ -4,8 +4,8 @@
       <div class="w-full md:w-4/12 mb-3 md:mb-0">
         <legend class="text-lg">Billing</legend>
         <small class="text-gray-600 block pt-1 pb-2"
-          >Make sure to keep your payment method up-to-date for an effortless and
-          care-free experience.</small
+          >Make sure to keep your payment method up-to-date for an effortless
+          and care-free experience.</small
         >
       </div>
       <div class="w-full md:w-7/12">
@@ -75,19 +75,19 @@
 </template>
 
 <script>
-import Radio from './components/Radio'
+import Radio from "./components/Radio";
 
 export default {
-  components: { 'd-radio': Radio },
+  components: { "d-radio": Radio },
   data: function() {
-    return { selected: 'essential' }
+    return { selected: "essential" };
   },
   methods: {
     updateSelected(selection) {
-      this.selected = selection
-    },
-  },
-}
+      this.selected = selection;
+    }
+  }
+};
 </script>
 
 <style lang="postcss"></style>
