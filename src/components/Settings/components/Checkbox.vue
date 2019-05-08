@@ -1,13 +1,13 @@
 <template>
   <div class="flex items-center mb-3 relative">
     <input
-      id="notifications_activity"
+      :id="title"
       :checked="checked"
       class="checkbox__input"
       type="checkbox"
       name="notifications"
     />
-    <label for="notifications_activity" class="checkbox__label">
+    <label :for="title" class="checkbox__label">
       {{ title }}
       <small class="w-full text-gray-600">{{ description }}</small
       ><span class="checkmark"></span>
