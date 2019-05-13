@@ -11,7 +11,7 @@
     "faker": "4.1.0",
     "gridsome": "0.6.0",
     "gridsome-helper-json": "1.0.3",
-    "tailwindcss": "1.0.0-beta.10",
+    "tailwindcss": "1.0.1",
     "vue-svg-loader": "0.12.0"
   },
   "devDependencies": {
