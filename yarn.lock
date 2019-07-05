@@ -3806,10 +3806,10 @@ gridsome-helper-json@1.0.3:
   resolved "https://registry.yarnpkg.com/gridsome-helper-json/-/gridsome-helper-json-1.0.3.tgz#ad18ca2e15e1d9f1a6524507fc3b87b99bcee9d2"
   integrity sha512-CgXlq3PGpBRj8RMnLSYs46Hvl5q9Up9kwuMAcYlvS4sNgH5j4Ao7hbY+HI62PaYTeIdffiJidLEIeZVCmZCrFA==
 
-gridsome@0.6.5:
-  version "0.6.5"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.6.5.tgz#62be3e0f0082afc628481728ad2311630f570b78"
-  integrity sha512-ZM1bpATqaalJFQw8O/0oReEOcmwNBFjUrDQkF/0QLU98dmkl6xdF9SVRahWQde/5uQf2mbt0NV9gjorhnG68Wg==
+gridsome@0.6.6:
+  version "0.6.6"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.6.6.tgz#054ce5b4f4c43624fd4885cbadd116e4b12471e2"
+  integrity sha512-6NSnOhM5wvxxSxIJt9FAOeA5IRZgx6J1V19kyfKyLxdWjlzfDwrhKFUPgROgob3N5zQfapslt3Zi21t8YS8DKg==
   dependencies:
     "@babel/core" "^7.0.0"
     "@gridsome/cli" "^0.2.1"
