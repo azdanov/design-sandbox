@@ -2875,10 +2875,10 @@ eslint-config-prettier@6.0.0:
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-plugin-gridsome@1.2.6:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-gridsome/-/eslint-plugin-gridsome-1.2.6.tgz#e93a306174c9123fffa4d5c4326b9927a5bd38be"
-  integrity sha512-45BfQyKb5f2ZQ+J5WgE2eodpGm76wjcj8ZLbnsiX+6AVtX/GLZLMzPgUJxfSz0Io4tdQlTsD89suvl9nmiFcqg==
+eslint-plugin-gridsome@1.2.8:
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-gridsome/-/eslint-plugin-gridsome-1.2.8.tgz#d9d9e697862fd5f164a41fab074e0b856918edc0"
+  integrity sha512-ui3Uny94LQ1jhCuR4tIYeCjTpOaVr/+irB8Pc2gUwo/eNENt/rD+CFsQ467BYS6nQX2j7xHMeUpTGLC4FiN1cw==
   dependencies:
     prettier "^1.18.2"
     vue-eslint-parser "^6.0.4"
